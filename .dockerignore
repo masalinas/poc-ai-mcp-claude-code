@@ -1,0 +1,13 @@
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+binaries
+documents
+media
+docker-compose.yaml
+README.md
+Dockerfile
+.venv
+.vscode
+.gitignore
+.git
