@@ -10,26 +10,31 @@
 │    ~/temp/poc-ai-claude-code-mcp    │                                        │
 ╰──────────────────────────────────────────────────────────────────────────────╯
 
-
 ❯ /context 
   ⎿  Context Usage
      ⛁ ⛁ ⛀ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶   qwen3.6-27b
-     ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶   3.1k/200k tokens (2%)
+     ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶   3.1k/131.1k tokens (2%)
      ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ 
      ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶   Estimated usage by category
-     ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶   ⛁ System prompt: 1.5k tokens (0.7%)
-     ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶   ⛁ Skills: 1.6k tokens (0.8%)
+     ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶   ⛁ System prompt: 1.6k tokens (1.2%)
+     ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶   ⛁ Skills: 1.5k tokens (1.1%)
      ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶   ⛁ Messages: 8 tokens (0.0%)
-     ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶ ⛶   ⛶ Free space: 163.9k (82.0%)
-     ⛶ ⛶ ⛶ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝   ⛝ Autocompact buffer: 33k tokens (16.5%)
-     ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ 
+     ⛶ ⛶ ⛶ ⛶ ⛶ ⛝ ⛝ ⛝ ⛝ ⛝   ⛶ Free space: 95k (72.5%)
+     ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝   ⛝ Autocompact buffer: 33k tokens (25.2%)
+     ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝ ⛝
 
-     Auto-compact window: 200k tokens (default for an unrecognized model)
+     Auto-compact window: 131.1k tokens (default for an unrecognized model)
 
      Skills · /skills
 
      User
-     └ find-skills: ~110 tokens
+     └ find-skills: < 20 tokens
+
+     Plugin (diagram-design)
+     ├ diagram-design:export-diagram: < 20 tokens
+     ├ diagram-design:import-drawio: < 20 tokens
+     ├ diagram-design:import-mermaid: < 20 tokens
+     └ diagram-design:diagram-design: < 20 tokens
 
      Built-in
      ├ dataviz: ~380 tokens
@@ -40,8 +45,8 @@
      ├ keybindings-help: ~80 tokens
      ├ fewer-permission-prompts: ~60 tokens
      ├ simplify: ~60 tokens
-     ├ security-review: ~30 tokens
-     └ init: ~20 tokens
+     ├ security-review: < 20 tokens
+     └ init: < 20 tokens
 
 ❯ Build an MCP (Model Context Protocol) server and a matching test client using 
                                                                                 
