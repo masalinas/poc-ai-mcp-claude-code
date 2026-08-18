@@ -160,3 +160,11 @@ At least one of `customer_id` or `customer_email` must be provided.
 - **No hardcoded credentials** — all DB parameters come from environment variables loaded via `python-dotenv`.
 - **Parameterized queries only** — SQL injection is prevented by using `$1`, `$2` placeholders throughout.
 - **Connection pooling** — an `asyncpg` pool (2–10 connections) is created once at server startup and closed at shutdown.
+
+## Claude code configurations
+
+If you want disable the autocompact to hav emore context window space use this parameter in your claude settings.json
+
+```
+"DISABLE_AUTO_COMPACT": "true"
+```
